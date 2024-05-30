@@ -1,0 +1,111 @@
+*{
+    font-family: 'Poppins',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height: 100vh;
+    background-image: url(bacj.jpg);
+    background-color:rgb(60, 79, 113);
+}
+.container{
+    width:400px;
+    background-color:#ffffff;
+    padding:10px 30px;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin:10px 30px;
+    border-radius:13px;
+}
+.container header{
+    font-size:33px;
+    font-weight:300;
+    padding-bottom:20px;
+    cursor:pointer;
+    text-align:center;
+    position:relative;
+}
+.container header:hover{
+    color:brown;
+    padding-right:2px;
+
+}
+.container header:hover::after{
+    content:'';
+    left:0;
+    right:0;
+    bottom:1px;
+    background-color: rgb(4, 4, 44);
+    position:absolute;
+    height:4px;
+    width:100%;
+}
+.container form{
+    margin:10px 20px;
+    padding-top:10px;
+}
+form :where(input,select,button){
+    border:none;
+    outline:none;
+    width:100%;
+    border-radius:15px;
+    height:33px;
+}
+form p{
+    font-size:22px;
+    margin-bottom:10px;
+}
+form input{
+    font-size:17px;
+    height:33px;
+    border:2px solid rgb(169, 168, 168);
+}
+form input:focus{
+    border: 2px solid rgb(87, 87, 214);
+    padding:0px 14px;
+}
+form .drop-list{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    margin-top:10px;
+}
+.drop-list .selec_box{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    width:120px;
+    height:53px;
+    border:2px solid rgb(244, 244, 255);
+    border-radius:5px;
+}
+.selec_box select{
+    width:auto;
+}
+
+.selec_box img{
+    max-width:26px;
+}
+.drop-list .icon{
+    cursor:pointer;
+    margin-top:25px;
+    font-size:22px;
+}
+form .exchange-rate{
+    font-size:16px;
+    margin-top:10px;
+    margin-bottom:10px;
+} 
+form button{
+    height:40px;
+    font-size:17px;
+    background-color: rgb(121, 161, 235);
+    cursor:pointer;
+}
+.exchange-rate{
+    font-size:213px;
+}
